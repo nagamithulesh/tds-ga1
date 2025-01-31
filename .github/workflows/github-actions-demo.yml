@@ -1,5 +1,20 @@
+name: Simple GitHub Action Example
+
+on:
+  push:
+    branches:
+      - main  # This will run the action when you push to the main branch
+
 jobs:
   test:
+    runs-on: ubuntu-latest  # Specify the operating system to run the job
+
     steps:
-      - name: venkatanaga.gutha@gramener.com
-        run: echo "Hello, world!"
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: abc@email.com - Greet the world
+        run: echo "Hello, world! This is a simple GitHub Action with an email in the name."
+
+      - name: Another Step
+        run: echo "This is another step in the GitHub Action"
