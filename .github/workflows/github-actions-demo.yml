@@ -13,7 +13,7 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v2
 
-      - name: abc@email.com - Greet the world
+      - name: venkatanaga.gutha@gramener.com 
         run: echo "Hello, world! This is a simple GitHub Action with an email in the name."
 
       - name: Another Step
